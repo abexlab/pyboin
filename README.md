@@ -1,6 +1,9 @@
 pyboin
 ======
 
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+
+
 pyboin is Pure-Python Japanese character interconverter for Hiragana and Vowel.
 ```
 「こんにちは」 -> 「おんいいあ」
