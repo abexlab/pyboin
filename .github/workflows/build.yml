@@ -28,4 +28,4 @@ jobs:
         python setup.py install
     - name: Run Test
       run: |
-        python test/text2boin_test.py
+        python tests/text2boin_test.py
