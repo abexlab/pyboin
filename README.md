@@ -1,6 +1,7 @@
 pyboin
 ======
 
+[![](https://github.com/AjxLab/pyboin/workflows/build/badge.svg)](https://github.com/AjxLab/pyboin/actions)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 
