@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: pyboin
-Version: 0.1.0
+Version: 0.1.1
 Summary: UNKNOWN
 Home-page: https://github.com/AjxLab/pyboin
 Author: Tatsuya Abe
@@ -10,6 +10,7 @@ Description: pyboin
         ======
         
         [![](https://github.com/AjxLab/pyboin/workflows/build/badge.svg)](https://github.com/AjxLab/pyboin/actions)
+        [![PyPi](https://badge.fury.io/py/pyboin.svg)](https://pypi.python.org/pypi/pyboin/)
         [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
         
         
@@ -21,6 +22,20 @@ Description: pyboin
         
         ## Requirement
         * Python3
+        
+        
+        ## Usage
+        ```python
+        import pyboin
+        
+        # Argument 'cv' may be omitted.
+        # Specify katakana or hiragana as the first argument.
+        pyboin.text2boin('こんにちは', cv='katakana')
+        # => 'オンイイア'
+        
+        pyboin.text2boin('こんにちは', cv='hiragana')
+        # => 'おんいいあ'
+        ```
         
         
         ## Installation
