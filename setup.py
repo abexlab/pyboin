@@ -12,7 +12,7 @@ setup(
     packages=['pyboin'],
     install_requires=["jaconv"],
 
-    version='0.1.1',
+    version='0.2.2',
     license='MIT',
 
     author='Tatsuya Abe',
@@ -23,7 +23,7 @@ setup(
     desription='Pure-Python Japanese character interconverter for Hiragana and Vowel.',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    keywords='crawling crawler scraping',
+    keywords='japanese romaji hiragana katakana',
 
     classifiers=[
         'License :: OSI Approved :: MIT License',
