@@ -12,7 +12,7 @@ setup(
     packages=['pyboin'],
     install_requires=["jaconv"],
 
-    version='0.2.1',
+    version='0.2.2',
     license='MIT',
 
     author='Tatsuya Abe',

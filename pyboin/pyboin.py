@@ -47,7 +47,6 @@ def romanize(char, vowel):
     for i in range(len(vowel_map)):
         for j in range(len(vowel_map[i][1])):
             if char == vowel_map[i][1][j]:
-                print(vowel_list.index(vowel))
                 char_romanize = vowel_map[vowel_list.index(vowel)][1][j]
                 return char_romanize
 
