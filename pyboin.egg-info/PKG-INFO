@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: pyboin
-Version: 0.1.1
+Version: 0.2.1
 Summary: UNKNOWN
 Home-page: https://github.com/AjxLab/pyboin
 Author: Tatsuya Abe
@@ -52,7 +52,7 @@ Description: pyboin
         * Tatsuya Abe
         * '''abe12<at>mccc.jp'''
         
-Keywords: crawling crawler scraping
+Keywords: japanese romaji hiragana katakana
 Platform: UNKNOWN
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3.7

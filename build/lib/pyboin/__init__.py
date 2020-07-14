@@ -6,6 +6,7 @@ __author__       = 'Tatsuya Abe'
 __author_email__ = 'abe12@mccc.jp'
 __url__          = 'https://github.com/AjxLab/pyboin'
 
-__all__ = ['text2boin']
+__all__ = ['text2boin', 'romanize']
 
 text2boin = pyboin.text2boin
+romanize = pyboin.romanize
