@@ -10,9 +10,27 @@ vowel_map =\
         ['オ', 'オコソトノホモヨロヲゴゾドボポォ　ョ　'],
     ]
 
+consonant_map = \
+    [
+        ['k', 'カキクケコ'],
+        ['s', 'サシスセソ'],
+        ['t', 'タチツテト'],
+        ['n', 'ナニヌネノ'],
+        ['h', 'ハヒフヘホ'],
+        ['m', 'マミムメモ'],
+        ['y', 'ヤ　ユ　ヨ'],
+        ['r', 'ラリルレロ'],
+        ['w', 'ワ　　　ヲ'],
+        ['g', 'ガギグゲゴ'],
+        ['z', 'ザジズゼゾ'],
+        ['d', 'ダヂヅデド'],
+        ['b', 'バビブベボ'],
+        ['p', 'パピプペポ'],
+    ]
+
 
 def text2boin(text, cv='katakana'):
-    ## -----*----- 母音に変換 -----*----- ##
+    """ 母音に変換 """
     if not cv in ('katakana', 'hiragana'):
         raise ValueError("argument cv allows 'katakana' or 'hiragana'")
 
@@ -34,12 +52,11 @@ def text2boin(text, cv='katakana'):
 
     if cv == 'hiragana':
         ret = jaconv.kata2hira(ret)
-
     return ret
 
 
-def romanize(char, vowel):
-    ## -----*----- 母音を変換 -----*----- ##
+def convert_vowel(char, vowel):
+    """ 母音を変換 """
     char_romanize = ''
     vowel_list = ['ア', 'イ', 'ウ', 'エ', 'オ']
 
@@ -52,3 +69,15 @@ def romanize(char, vowel):
 
     return char
 
+
+def romanize(vowel, consonant):
+    """ ローマ字変換 """
+    result = ''
+
+    for pattern in consonant_map:
+        if consonant == pattern[0]:
+            index = 'aiueo'.index(vowel)
+            if pattern[1][index] != '　':
+                result = pattern[1][index]
+
+    return result
