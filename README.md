@@ -27,6 +27,14 @@ pyboin.text2boin('こんにちは', cv='katakana')
 
 pyboin.text2boin('こんにちは', cv='hiragana')
 # => 'おんいいあ'
+
+pyboin.convert_vowel('ス', 'ア')
+# => 'サ'
+pyboin.convert_vowel('カ', 'オ')
+# => 'コ'
+
+pyboin.romanize('a', 's')
+# => 'サ'
 ```
 
 

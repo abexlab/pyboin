@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: pyboin
-Version: 0.2.2
+Version: 0.3.0
 Summary: UNKNOWN
 Home-page: https://github.com/AjxLab/pyboin
 Author: Tatsuya Abe
@@ -35,6 +35,14 @@ Description: pyboin
         
         pyboin.text2boin('こんにちは', cv='hiragana')
         # => 'おんいいあ'
+        
+        pyboin.convert_vowel('ス', 'ア')
+        # => 'サ'
+        pyboin.convert_vowel('カ', 'オ')
+        # => 'コ'
+        
+        pyboin.romanize('a', 's')
+        # => 'サ'
         ```
         
         
