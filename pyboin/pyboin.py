@@ -28,6 +28,35 @@ consonant_map = \
         ['p', 'パピプペポ'],
     ]
 
+alphabets = {
+    'a': 'エー',
+    'b': 'ビー',
+    'c': 'シー',
+    'd': 'ディー',
+    'e': 'イー',
+    'f': 'エフ',
+    'g': 'ジー',
+    'h': 'エッチ',
+    'i': 'アイ',
+    'j': 'ジェー',
+    'k': 'ケー',
+    'l': 'エル',
+    'm': 'エム',
+    'n': 'エヌ',
+    'o': 'オー',
+    'p': 'ピー',
+    'q': 'キュー',
+    'r': 'アール',
+    's': 'エス',
+    't': 'ティー',
+    'u': 'ユー',
+    'v': 'ブイ',
+    'w': 'ダブリュ',
+    'x': 'エックス',
+    'y': 'ワイ',
+    'z': 'ゼット',
+}
+
 
 def text2boin(text, cv='katakana'):
     """ 母音に変換 """
@@ -79,5 +108,16 @@ def romanize(vowel, consonant):
             index = 'aiueo'.index(vowel)
             if pattern[1][index] != '　':
                 result = pattern[1][index]
+
+    return result
+
+
+def alphabet_to_reading(text):
+    result = ''
+
+    text = text.lower()
+    for ch in text:
+        if ch in alphabets:
+            result += alphabets[ch.lower()]
 
     return result
